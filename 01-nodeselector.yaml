@@ -26,16 +26,16 @@ spec:
 # --> kubectl label nodes <your-node-name> disktype=ssd
 # --> kubectl get nodes --show-labels
 # This pod configuration file describes a pod that has a node selector, disktype: ssd. This means that the pod will get scheduled on a node that has a disktype=ssd label.
-apiVersion: v1
-kind: Pod
-metadata:
-  name: nginx1
-  labels:
-    env: test
-spec:
-  containers:
-  - name: nginx
-    image: nginx
-  nodeSelector:
-    disktype: ssd
+# apiVersion: v1
+# kind: Pod
+# metadata:
+#   name: nginx1
+#   labels:
+#     env: test
+# spec:
+#   containers:
+#   - name: nginx
+#     image: nginx
+#   nodeSelector:
+#     disktype: ssd
 
