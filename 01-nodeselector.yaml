@@ -6,7 +6,7 @@ metadata:
     env: test
 spec:
   nodeSelector:
-    topology.kubernetes.io/zone: us-east-1a
+    topology.kubernetes.io/zone: us-east-1b
   containers:
   - name: nginx
     image: nginx
