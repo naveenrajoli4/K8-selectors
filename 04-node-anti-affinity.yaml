@@ -17,8 +17,8 @@ spec:
   containers:
   - name: nginx
     image: nginx
-  # tolerations:
-  # - key: "rnk"
-  #   operator: "Equal"
-  #   value: "naveen"
-  #   effect: "NoExecute"
+  tolerations:
+  - key: "rnk"
+    operator: "Equal"
+    value: "naveen"
+    effect: "NoExecute"
