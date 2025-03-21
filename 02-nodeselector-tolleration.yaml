@@ -10,6 +10,12 @@ spec:
   containers:
   - name: nginx
     image: nginx
+  tolerations:
+  - key: "rnk"
+    operator: "Equal"
+    value: "nr"
+    effect: "NoSchedule"
+
 ---
 
 
